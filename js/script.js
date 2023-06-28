@@ -30,6 +30,16 @@ const team = [
     }
 ];
 
+// Stampare in console.log di ogni membro tramite il ciclo For in 
+
+  for (let i = 0; i < team.length; i++) {
+
+    for (let key in team[i]) {
+        console.log(key, team[i][key]);
+}
+  }
+
+
 
 
 
