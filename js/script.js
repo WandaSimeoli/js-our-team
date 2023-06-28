@@ -15,29 +15,48 @@ const team = [
         name : 'Walter Gordon',
         role : 'Office Manager',
         img : 'walter-gordon-office-manager.jpg',
-    },{
+    },
+    {
         name : 'Angela Lopez',
         role : 'Social Media Manager',
         img : 'angela-lopez-social-media-manager.jpg',
-    },{
+    },
+    {
         name : 'Scott Estrada',
         role : 'Developer',
         img : 'scott-estrada-developer.jpg',
-    },{
+    },
+    {
         name : 'Barbara Ramos',
         role : 'Graphic Designer',
         img : 'barbara-ramos-graphic-designer.jpg',
     }
 ];
 
+
+const teamList = document.getElementById('team');
+
 // Stampare in console.log di ogni membro tramite il ciclo For in 
 
   for (let i = 0; i < team.length; i++) {
 
-    for (let key in team[i]) {
-        console.log(key, team[i][key]);
-}
+    console.log(team[i]);
+    console.log(team[i].name);
+    console.log(team[i].role);
+    console.log(team[i].img);
+
+    // Stampare in pagina le info
+
+    teamList.innerHTML += `
+    <li> ${team[i].name}
+     <div>${team[i].role} </div>
+     <img src="./img/">${team[i].img}
+     </li>
+    `;
+
   }
+
+
 
 
 
