@@ -50,7 +50,7 @@ const teamList = document.getElementById('team');
     teamList.innerHTML += `
     <li> ${team[i].name}
      <div>${team[i].role} </div>
-     <img src="./img/">${team[i].img}
+     <img src="./img/${team[i].img}">
      </li>
     `;
 
